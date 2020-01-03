@@ -1,11 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0
 }
-body{
+
+body {
     background-color: #9f2bed;
 }
-header{
+
+header {
     border: 4px solid black;
     height: 150px;
     text-align: center;
@@ -15,19 +17,30 @@ header{
     font-weight: 700;
     font-family: 'Hanalei Fill', cursive;
 }
-header a, nav a{
+
+header a,
+nav a {
     display: block;
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: black;
 }
-nav{
+
+header a:hover,
+nav a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
     width: 100vw;
     cursor: pointer;
     position: absolute;
+    z-index: 2;
 }
-nav>ul>li{
+
+nav > ul > li {
     display: inline-block;
     background-color: goldenrod;
     border: 2px solid black;
@@ -37,31 +50,37 @@ nav>ul>li{
     text-align: center;
     width: 20vw;
 }
-nav>ul>li span{
+
+nav > ul > li span {
     display: block;
     padding: 25px 0;
 }
-nav>ul>li:hover span{
+
+nav > ul > li:hover span {
     background-color: #ef7102;
 }
+
 /*
 nav>ul>li>ul{
     margin-top: 25px;
 }
 */
-nav>ul>li>ul>li{
+nav > ul > li > ul > li {
     display: none;
     font-size: 30px;
     border: 1px solid black;
     padding: 10px 0;
 }
-nav>ul>li:hover>ul>li{
+
+nav > ul > li:hover > ul > li {
     display: block;
 }
-nav>ul>li>ul>li:hover{
+
+nav > ul > li > ul > li:hover {
     background-color: #cf8102;
 }
-main{
+
+main {
     background-color: aliceblue;
     margin: auto;
     width: 90vw;
@@ -70,99 +89,139 @@ main{
     padding: 35px 0;
     text-align: center;
 }
-main>.content{
+
+main > .content {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
 }
-main>.content>div{
-    margin-bottom: 50px;
-}
-main .mainInfo>img{
-    display: inline-block;
-    width: 7%;
-}
-main h2{
+
+main h2 {
     font-family: 'Berkshire Swash', cursive;
     font-size: 2em;
     text-align: center;
     color: #9f2bed;
     padding-bottom: 10px;
 }
-main p{
+
+main p {
     font-family: 'Berkshire Swash', cursive;
     font-size: 1.2em;
     text-align: justify;
     color: #5c0775;
     padding: 20px;
+    margin-top: 50px
 }
-main img{
+
+main img {
     display: inline-block;
-    width: 80%;
+    width: 50%;
 }
-main #monety{
+main #zlotoSwiat>span#countryLimit{
+    color: blue;
+}
+main table, main th, main td{
+    border: 1px solid black;
+    font-size: 30px;
+    padding: 15px;
+}
+main table{
+    margin: auto;
+    background-color: orange
+}
+main table img{
+    width: 82px;
+    padding-right: 15px;
+}
+main td{
+    text-align: left;
+}
+main #monety {
     padding: 5px;
     display: inline-block;
     text-align: left;
 }
-main #monety .moneta{
+
+main #monety .moneta {
     display: inline-block;
-    padding: 35px 15px;
-    width: 33%;
+    padding: 5px 15px;
     box-sizing: border-box;
 }
-main #monety .moneta_img{
+
+main #monety .moneta_img {
     display: inline-block;
     width: 45%;
     padding: 5px;
 }
-main #monety .moneta_price{
+
+main #monety .moneta_price {
     text-align: center;
     font-size: 1.4em;
-    font-weight: 800;
+    padding-bottom: 30px;
+    color: black;
+    font-weight: 600;
 }
-main #monety img{
+
+main #monety img {
     width: 100%;
 }
-main>.content>.map{
+
+main .mainInfo {
+    margin-bottom: 50px;
+}
+
+.row {
+    align-items: center;
+}
+
+.row img{
+    width: 100%;
+}
+
+main > .content > .map {
     margin: 30px;
 }
-main>.content>.contact{
+
+main > .content > .contact {
     font-size: 30px;
     font-family: ;
     font-weight: 700;
 }
-main>.content>.contact i{
+
+main > .content > .contact i {
     padding: 15px;
 }
-main>.content>.contact i.icon-mail{
+
+main > .content > .contact i.icon-mail {
     padding: 11px;
 }
-main>.content>.contact>div{
+
+main > .content > .contact > div {
     margin-top: 20px;
 }
-footer{
+
+footer {
     background-color: #591473;
     color: white;
     font-size: 30px;
-    padding: 50px;
-    padding-left: 180px
+    padding: 50px 50px 50px 180px;
 }
-footer>ul{
+
+footer a,
+#social_media {
     list-style-type: none;
-    display: inline-block;
+    display: block;
     vertical-align: top;
-    width: 40%;
-}
-footer>ul>li{
     margin-top: 20px;
-    font-size: 20px
-}
-footer>ul>li>a, #social_media{
-    text-decoration: none;
     color: wheat;
-    font-size: 30px;
+    text-decoration: none;
 }
-footer>ul>li>a:hover{
-    color: darkgoldenrod
+
+footer a:hover {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+footer a.social_medium {
+    display: inline-block;
 }
