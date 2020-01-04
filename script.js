@@ -1,5 +1,5 @@
 $(function () {
-    $("a").on("click", function (e) {
+    $("nav a").on("click", function (e) {
         e.preventDefault();
         const url = this.href;
         $(".content").remove();
@@ -13,7 +13,7 @@ $(function () {
     $(document).ajaxComplete(function () {
 
         const $rows = $("tbody tr");
-        $("#countryNumber").on("input", function () {
+        $("#countryNumber").on("input", function () { 
             const $ile = $("select").val();
             const $ileile = parseInt($ile);
             $("tbody").empty();
