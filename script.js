@@ -1,5 +1,5 @@
 $(function () {
-    $("nav a").on("click", function (e) {
+    $("nav a, footer a").on("click", function (e) {
         e.preventDefault();
         const url = this.href;
         $(".content").remove();

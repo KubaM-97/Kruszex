@@ -131,7 +131,12 @@ main img {
 }
 
 main #zlotoSwiat > span#countryLimit {
-    color: blue;
+    color: orange;
+    text-align: left;
+    font-size: 2em;
+}
+main #zlotoSwiat > span#countryLimit > select {
+   background-color: orangered;
 }
 
 main table,
