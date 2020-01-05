@@ -27,20 +27,71 @@ $(function () {
             }
         });
 
-        for(let i = 0; i<10; i++){
-            
-            $(".mine")[i].css(
-                'backgroundImage' , "url(img/Silver/World/Mines/mine"+[i]+".png)";
-        )
-        }
-//        $(".mine").on("mouseenter", function () {
-//            $(this).delay(750).css(
-//               'backgroundImage', 'url(img/Silver/World/)';
-//            );
-//        });
+        //        $(".mine img").hide();
+        $(".mine").on("mouseover", function () {
+            const $number = this.id;
+            //            $(this).animate({}, {
+            //            step: function(fx) {
+            //              $(this).css('-webkit-transform','rotate(70deg)'); 
+            //              $(this).css('-moz-transform','rotate(70deg)');
+            //              $(this).css('transform','rotate(70deg)');
+            //            },
+            //            duration:'slow'
+            //            },'linear');
+
+            for (let i = 0; i < 10; i++) {
+                if ($number == i) {
+                    //                    alert(77);
+                    //                    $(this).animate({}, {
+                    //                        step: function (fx) {
+                    //                            $(this).css('-webkit-transform', 'rotate(70deg)');
+                    //                            $(this).css('-moz-transform', 'rotate(70deg)');
+                    //                            $(this).css('transform', 'rotate(70deg)');
+                    //                        },
+                    //                        duration: 'slow'
+                    //                    }, 'linear');
+                    $(this).css({
+                        'backgroundImage': "url(img/Silver/World/Mines/mine" + [i] + ".png)",
+                        'backgroundSize': "cover",
+                        'backgroundPosition': "center",
+                        'fontSize': '0'
+                    })
+                }
+            }
+            $(this).on("mouseout", function () {
+                $(this).css({
+                    'backgroundColor': 'grey !important',
+                    'backgroundImage': 'linear-gradient(to bottom, #d7d9db, #b8bbbf)',
+                        'fontSize': '30px'
+//                    'backgroundImage': "url(img/"
+                })
+            });
+        });
 
 
     });
+    //        $(".mine").on("mouseenter", function () {
+    //            $(this).delay(750).css(
+    //               'backgroundImage', 'url(img/Silver/World/)';
+    //            );
+    //        });
+
+
+
+    //    fetch("https://current-precious-metal-price.p.rapidapi.com/metals/v1/0", {
+    //            "method": "GET",
+    //            "headers": {
+    //                "x-rapidapi-host": "current-precious-metal-price.p.rapidapi.com",
+    //                "x-rapidapi-key": "7b23a3fbb8msh3448936b50d2ffbp1103d6jsn8aca62706263"
+    //            }
+    //        })
+    //        .then(response => {
+    //            console.log(response);
+    //        })
+    //        .catch(err => {
+    //            console.log(err);
+    //        });
+
 
 });
 //fetch('https://jsonplaceholder.typicode.com/todos/1')
