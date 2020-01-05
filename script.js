@@ -13,8 +13,10 @@ $(function () {
     $(document).ajaxComplete(function () {
 
         const $rows = $("tbody tr");
-        $("#countryNumber").on("input", function () { 
-            const $ile = $("select").val();
+        $("#countryNumber").on("input", function () {
+            let $ile = $("select").val();
+            if ($ile == "Wszystek") $ile = `${$rows.length}`;
+            //$ile=="Wszystek"?$ile = $rows.length:alert(22)
             const $ileile = parseInt($ile);
             $("tbody").empty();
             $tableContent = "";
@@ -24,6 +26,19 @@ $(function () {
                 $("tbody").append($tableContent);
             }
         });
+
+        for(let i = 0; i<10; i++){
+            
+            $(".mine")[i].css(
+                'backgroundImage' , "url(img/Silver/World/Mines/mine"+[i]+".png)";
+        )
+        }
+//        $(".mine").on("mouseenter", function () {
+//            $(this).delay(750).css(
+//               'backgroundImage', 'url(img/Silver/World/)';
+//            );
+//        });
+
 
     });
 
