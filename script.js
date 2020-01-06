@@ -53,6 +53,28 @@ $(function () {
 
 
     });
+    //        $(".mine").on("mouseenter", function () {
+    //            $(this).delay(750).css(
+    //               'backgroundImage', 'url(img/Silver/World/)';
+    //            );
+    //        });
+
+
+
+    //    fetch("https://current-precious-metal-price.p.rapidapi.com/metals/v1/0", {
+    //            "method": "GET",
+    //            "headers": {
+    //                "x-rapidapi-host": "current-precious-metal-price.p.rapidapi.com",
+    //                "x-rapidapi-key": "7b23a3fbb8msh3448936b50d2ffbp1103d6jsn8aca62706263"
+    //            }
+    //        })
+    //        .then(response => {
+    //            console.log(response);
+    //        })
+    //        .catch(err => {
+    //            console.log(err);
+    //        });
+
 
     //    fetch("https://current-precious-metal-price.p.rapidapi.com/metals/v1/0", {
     //            "method": "GET",

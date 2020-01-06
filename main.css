@@ -37,6 +37,14 @@ a:hover {
     text-decoration: none;
 }
 
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 header a,
 nav a {
     display: block;
@@ -125,7 +133,6 @@ main #silverWorld > ul li:hover img {
     height: 500px !important;
     width: auto !important;
 }
-
 /*
 @keyframes mmm {
     10% {
@@ -153,7 +160,6 @@ main #silverWorld > ul li:hover img {
     }
 }
 */
-
 
 main .mine {
     width: 200px;
