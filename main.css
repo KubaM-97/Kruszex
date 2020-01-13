@@ -72,7 +72,7 @@ nav > ul > li {
     background-color: goldenrod;
     border: 2px solid black;
     font-size: 2.5em;
-    margin-right: -4px;
+    margin-right: -5px;
     vertical-align: top;
     text-align: center;
     width: 25vw;
@@ -82,11 +82,16 @@ nav > ul > li span {
     display: block;
     padding: 25px 0;
 }
-
+canvas{
+    margin-top: 40px;
+}
 nav > ul > li:hover span {
-    background-color: #ef7102;
+    background-color: #ef7102 !important;
 }
 
+nav img {
+    width: 55px
+}
 
 nav > ul > li > ul > li {
     display: none;
@@ -97,6 +102,7 @@ nav > ul > li > ul > li {
 
 nav > ul > li:hover > ul > li {
     display: block;
+    width: 25vw;
 }
 
 nav > ul > li > ul > li:hover {
@@ -108,7 +114,7 @@ main {
     margin: auto;
     width: 90vw;
     max-width: 1600px;
-    min-height: 900px;
+    min-height: 900px !important;
     margin-top: 100px;
     padding: 35px 0;
     text-align: center;
@@ -133,6 +139,7 @@ main #silverWorld > ul li:hover img {
     height: 500px !important;
     width: auto !important;
 }
+
 /*
 @keyframes mmm {
     10% {
@@ -170,9 +177,10 @@ main .mine {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px;
     color: #999691;
-/*    display: inline-block;*/
+    vertical-align: top;
+    /*    display: inline-block;*/
     /*background: #e8e8e8;*/
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
@@ -210,7 +218,7 @@ main img {
     width: 50%;
 }
 
-main #zlotoSwiat > span#countryLimit {
+main #goldWorld > span#countryLimit {
     color: #db7516;
     display: block;
     text-align: left;
@@ -218,13 +226,13 @@ main #zlotoSwiat > span#countryLimit {
     font-size: 2em;
 }
 
-main #zlotoSwiat > span#countryLimit > select {
+main #goldWorld > span#countryLimit > select {
     background-color: #db7516;
     color: white;
     border-radius: 10px;
 }
 
-main .porownanie img {
+main .comparison img {
     width: 33%;
     display: inline-block;
     max-width: 700px;
@@ -257,38 +265,38 @@ main table td {
     text-align: left;
 }
 
-main #monety {
+main #coins {
     padding: 5px;
     display: inline-block;
     text-align: left;
     width: 100%;
 }
 
-main #monety .moneta_group {
+main #coins .coin_group {
     margin-bottom: 60px;
     text-align: center;
 }
 
-main #monety h2 {
+main #coins h2 {
     color: #9f2bed;
     margin-left: 50px;
     font-family: 'Berkshire Swash', cursive;
     text-align: left;
 }
 
-main #monety .moneta {
+main #coins .coin {
     display: inline-block;
     padding: 5px 15px;
     box-sizing: border-box;
 }
 
-main #monety .moneta_img {
+main #coins .coin_img {
     display: inline-block;
     width: 45%;
     padding: 5px;
 }
 
-main #monety .moneta_description {
+main #coins .coin_description {
     text-align: center;
     font-size: 1.4em;
     padding-bottom: 30px;
@@ -297,11 +305,11 @@ main #monety .moneta_description {
     width: 100%;
 }
 
-.moneta_description span {
+.coin_description span {
     display: inline-block;
 }
 
-main #monety img {
+main #coins img {
     width: 100%;
 }
 
@@ -318,19 +326,23 @@ main .mainInfo {
     width: 100%;
 }
 
-main .contact_main {
-    display: flex;
-    align-items: center;
-}
 
 main .map {
     margin: 30px;
+}
+
+main .map iframe {
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+    text-align: center;
 }
 
 main .contact {
     font-size: 30px;
     font-weight: 700;
     text-align: left;
+    margin-left: 30px;
 }
 
 main .contact i {
