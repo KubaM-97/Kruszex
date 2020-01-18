@@ -1,0 +1,36 @@
+{
+  "name": "szlachciur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "packMyScriptCodeFile": "webpack src/app.js --output dist/bundle2.js --mode development",
+    "packMyScriptCodeFile2": "webpack src/app.js --output dist/bundle7.js --mode development",
+    "packMyScriptFetchFile": "webpack ./fetch.js dist/bundle.js -p "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KubaM-97/Kruszex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KubaM-97/Kruszex/issues"
+  },
+  "homepage": "https://github.com/KubaM-97/Kruszex#readme",
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "jquery": "^3.4.1"
+  }
+}
