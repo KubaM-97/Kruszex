@@ -2,13 +2,16 @@ $(function () {
 
     //NAV FOR SHORT WIDTH
     const shortWidth = function () {
+
+        //hide nav after turning your phone vertically/horizontally
+        $("nav ul li ul li").css("display" , "none");
         
         //different left offsets for different ul
         var navOffset;
         $("nav ul li ul").on("mouseover", function () {
             navOffset = $(this).offset().left;
         });
-        
+
         if ($(window).width() < 864) {
             $("header span").hide();
             $("nav ul li ul:eq(0) span").html("<img src='img/billetGold.png'>");
@@ -62,20 +65,23 @@ $(function () {
             $(".package").load(url + " .content").hide().fadeIn(1000);
         }
     });
-    
-//Sticky nav
+
+    $("nav ul li ul li").on("click", function(){
+        $("nav ul li ul li").css("display" , "none");
+    })
+    //Sticky nav
     let oldScroll = $(this).scrollTop;
-    $(window).on("scroll", function(){
+    $(window).on("scroll", function () {
         let newScroll = $(this).scrollTop;
-        if(newScroll < oldScroll)
-            {
-                $("nav").css("position" , "sticky")
-            }
-        else{
-            $("nav").css("position" , "static")
+        console.log(oldScroll + "," + newScroll);
+        if (newScroll < oldScroll) {
+            $("nav").css("position", "sticky")
+        } else {
+            $("nav").css("position", "absolute")
         }
     });
-        
+
+    
     //SUBPAGES
     $(document).ajaxComplete(function () {
 

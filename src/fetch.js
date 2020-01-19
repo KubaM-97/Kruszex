@@ -1,7 +1,8 @@
 $(function () {
 
     fetch("http://api.nbp.pl/api/cenyzlota/last/30")
-        .then(res => res.json())
+       
+     .then(response => response.json())
         .then(data => {
             //console.log(data)
             let tabDay = [];
@@ -81,7 +82,12 @@ $(function () {
                 }
 
             })
+        })
+        .catch(err => {
+            console.log(err);
+        $(".canvasContainer").text("Nie połączono z serwerem.");
         });
+    
 
 
 
@@ -100,6 +106,15 @@ $(function () {
                 "x-rapidapi-key": "7b23a3fbb8msh3448936b50d2ffbp1103d6jsn8aca62706263"
             }
         })
+        .then(preResp => {
+        if(preResp.ok){
+            console.log("HURA")
+            return preResp
+        }
+        else{
+            throw Error($(".canvasContainer").text("Nie połączono z serwerem."))
+        }
+    })
         .then(res => res.json())
         .then(data => {
 
