@@ -2,12 +2,10 @@
   "name": "szlachciur",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "./src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "packMyScriptCodeFile": "webpack src/app.js --output dist/bundle2.js --mode development",
-    "packMyScriptCodeFile2": "webpack src/app.js --output dist/bundle7.js --mode development",
-    "packMyScriptFetchFile": "webpack ./fetch.js dist/bundle.js -p "
+    "build": "webpack src/js/app.js --output dist/bundle.js --mode development --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +18,15 @@
   },
   "homepage": "https://github.com/KubaM-97/Kruszex#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "style-loader": "^1.1.2",
+    "image-webpack-loader": "^6.0.0",
+    "style-loader": "^1.1.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
@@ -31,6 +35,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
+    "fontello-webpack-plugin": "^0.4.8",
     "jquery": "^3.4.1"
   }
 }
