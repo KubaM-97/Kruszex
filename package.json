@@ -36,6 +36,6 @@
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "fontello-webpack-plugin": "^0.4.8",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
