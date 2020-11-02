@@ -8,7 +8,7 @@ $(function () {
             let tabDay = [];
             let tabPrice = [];
             data.forEach(function (gold) {
-                let goldPriceInOunces = (Math.round(gold.cena * 28.3495231 * 100) / 100).toFixed(2);
+                let goldPriceInOunces = (Math.round(gold.cena * 31.1034768 * 100) / 100).toFixed(2);
                 tabDay.push(gold.data);
                 tabPrice.push(goldPriceInOunces);
             })
@@ -47,7 +47,7 @@ $(function () {
                 options: {
                     title: {
                         display: true,
-                        text: `AKTUALNIE 1 UNCJA ZŁOTA KOSZTUJE: ${(Math.round(data[29].cena*28.3495231 * 100) / 100).toFixed(2)} zł`,
+                        text: `AKTUALNIE 1 UNCJA ZŁOTA KOSZTUJE: ${(Math.round(data[29].cena*31.1034768 * 100) / 100).toFixed(2)} zł`,
                         fontSize: 20
                     },
                     hover: {
@@ -69,8 +69,8 @@ $(function () {
                             display: true,
                             ticks: {
                                 fontSize: 12,
-                                min: 5000,
-                                max: 5500
+                                min: 6000,
+                                max: 10000
                             }
                         }]
                     },
