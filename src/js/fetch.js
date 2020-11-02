@@ -108,7 +108,6 @@ $(function () {
         })
         .then(preResp => {
             if (preResp.ok) {
-                console.log("HURA")
                 return preResp
             } else {
                 throw Error($(".canvasContainer").text("Nie połączono z serwerem."))
