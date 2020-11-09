@@ -69,8 +69,8 @@ $(function () {
                             display: true,
                             ticks: {
                                 fontSize: 12,
-                                min: 6000,
-                                max: 10000
+                                min: 6500,
+                                max: 8500
                             }
                         }]
                     },
