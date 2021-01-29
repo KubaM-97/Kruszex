@@ -1,0 +1,26 @@
+footer {
+    background-color: #591473;
+    color: white;
+    font-size: 30px;
+    padding: 50px 0;
+}
+footer a,
+#social_media {
+    list-style-type: none;
+    display: block;
+    vertical-align: top;
+    margin: auto;
+    margin-top: 20px;
+    color: wheat;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+footer a:hover {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+footer a.social_medium {
+    display: inline-block;
+}

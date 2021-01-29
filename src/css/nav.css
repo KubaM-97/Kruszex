@@ -1,0 +1,46 @@
+
+nav {
+    width: 100vw;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+nav > ul > li {
+    display: inline-block;
+    background-color: goldenrod;
+    border: 2px solid black;
+    font-size: 2.5em;
+    margin-right: -5px;
+    vertical-align: top;
+    text-align: center;
+    width: 25vw;
+}
+
+nav > ul > li span {
+    display: block;
+    padding: 25px 0;
+}
+nav > ul > li:hover span {
+    background-color: #ef7102 !important;
+}
+
+nav img {
+    width: 55px
+}
+
+nav > ul > li > ul > li {
+    display: none;
+    font-size: 0.87em;
+    border: 1px solid black;
+    padding: 10px 0;
+}
+
+nav > ul > li:hover > ul > li {
+    display: block;
+    width: 25vw;
+}
+
+nav > ul > li > ul > li:hover {
+    background-color: #cf8102;
+}

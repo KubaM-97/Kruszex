@@ -1,0 +1,24 @@
+
+header {
+    border: 4px solid black;
+    height: 150px;
+    text-align: center;
+    /* background-image: url(img/Main/logo_background.jpg);  */
+    /* background-repeat: repeat-x; */
+    overflow: hidden;
+    font-size: 6.5em;
+    font-weight: 500;
+    font-family: 'Hanalei Fill', cursive;
+    position: relative;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+header>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+header>a>img {
+    width: 140px;
+}
