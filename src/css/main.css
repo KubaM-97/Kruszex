@@ -2,10 +2,10 @@ main {
     background-color: aliceblue;
     margin: auto;
     width: 90vw;
-    max-width: 1600px;
+    max-width: 1200px;
     min-height: 900px !important;
     margin-top: 100px;
-    padding: 35px 0;
+    padding: 35px 0 80px;
     text-align: center;
 }
 
