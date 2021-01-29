@@ -3,7 +3,7 @@
 
 A website about precious metals.
 
-<img src="src/img/logo.jpg" alt="Logo" title="Logo" width="200px" />
+<img src="src/img/Main/logo_background.jpg" alt="Logo" title="Logo" width="200px" />
 
 ## Installation
 
